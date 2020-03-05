@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="~/css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    @model dojodachi
+    <p><span>Fullness:</span> @Model.fullness | <span>Happiness:</span> @Model.happiness | <span>Meals:</span> @Model.meals | <span>Energy:</span> @Model.energy</p>
+        <img src="@ViewBag.petImage" alt="Sloth astronaut">
+        @{
+                <p>@ViewBag.Result</p>
+        }
+    <div class="links">
+        <a href="feed">Feed</a>
+        <a href="play">Play</a>
+        <a href="work">Work</a>
+        <a href="sleep">Sleep</a>
+    </div>
+    <a href="reset" class="btn btn-danger">Reset</a>
+</div>
+</body>
+</html>
